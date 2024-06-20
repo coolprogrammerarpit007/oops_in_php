@@ -26,6 +26,7 @@ class Dog extends Animal{
 class Cat extends Animal{
     public function meow()
     {
+        
         return "{$this->name} the kitten is meowing!";
     }
 }
