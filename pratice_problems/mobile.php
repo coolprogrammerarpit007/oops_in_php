@@ -1,5 +1,7 @@
 <?php
 
+    $mobileSim = $_POST["sim"];
+    // echo $mobileSim."<br>";
     // Mobile Class
 
     abstract class SIM{
@@ -51,11 +53,11 @@
     };
 
 
-    $mobileUser1 = new BSNL("Bsnl",1997);
-    $mobileUser2 = new AIRTEL("Airtel",2003);
+    $mobileUser1 = new BSNL($mobileSim,1997);
+    // $mobileUser2 = new AIRTEL("Airtel",2003);
 
 
-    // echo $mobileUser1->calling();
+    echo $mobileUser1->calling();
     // echo $mobileUser1->message();
     // echo $mobileUser2->calling();
     // echo $mobileUser2->message();
